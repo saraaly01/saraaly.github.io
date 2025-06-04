@@ -1,3 +1,7 @@
+
+
+
 function calculate() {
-  alert("Hello from JavaScript!");
+const input = document.getElementById("costT").value;
+document.getElementById("output").textContent = "You typed: " + input;
 }

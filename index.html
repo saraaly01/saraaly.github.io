@@ -1,4 +1,3 @@
-hi 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,17 @@ hi
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Commuter Calculator</h1>
-  <button onclick="calculate()">Calculate</button>
-
-  <script src="script.js"></script>
+<h1>Commuter Calculator</h1>
+<label for="costT">Cost Transit (per day):</label>
+<input type="text" id="const input = document.getElementById("myInput").value;" name="costT">
+<label for="costP">Cost Parking (per day):</label>
+<input type="text" id="costP" name="costP">
+<label for="balanaceT">Balance Transit:</label>
+<input type="text" id="balanaceT" name="balanaceT">
+<label for="balanaceP">Balance Parking:</label>
+<input type="text" id="balanaceP" name="balanaceP">
+<button onclick="calculate()">Calculate</button>
+<p id="output"></p>
+<script src="script.js"></script>
 </body>
 </html>
