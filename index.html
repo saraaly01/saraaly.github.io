@@ -5,18 +5,35 @@
   <title>Commuter Benefits</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="showElectionMonth()">
+
 <h1>Commuter Calculator</h1>
+<h2 id="monthTitle"></h2>
 <label for="costT">Cost Transit (per day):</label>
-<input type="text" id="const input = document.getElementById("myInput").value;" name="costT">
-<label for="costP">Cost Parking (per day):</label>
-<input type="text" id="costP" name="costP">
+<input type="text" id="costT" name="costT">
 <label for="balanaceT">Balance Transit:</label>
 <input type="text" id="balanaceT" name="balanaceT">
+<br></br>
+<label for="costP">Cost Parking (per day):</label>
+<input type="text" id="costP" name="costP">
 <label for="balanaceP">Balance Parking:</label>
 <input type="text" id="balanaceP" name="balanaceP">
+<br></br>
+<label for="daysEntered">Pick what days you come in:</label>
+<div class="weekday-group">
+    <label><input type="checkbox" name="days" value="1"> M</label>
+    <label><input type="checkbox" name="days" value="2"> T</label>
+    <label><input type="checkbox" name="days" value="3"> W</label>
+    <label><input type="checkbox" name="days" value="4"> Th</label>
+    <label><input type="checkbox" name="days" value="5"> F</label>
+  </div>
+  <br></br>
 <button onclick="calculate()">Calculate</button>
+
+
 <p id="output"></p>
+<p id="output2"></p>
+<p id="output3"></p>
 <script src="script.js"></script>
 </body>
 </html>

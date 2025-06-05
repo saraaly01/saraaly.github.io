@@ -6,13 +6,18 @@ body {
 }
 
 button {
+text-align: left;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-label {
+label, input {
+    display: block;
     text-align: left;
-    padding: 10px 20px;
-    font-size: 20px;
+    margin-bottom: 10px;
   }
-  
+
+.weekday-group label {
+    display: inline-block;
+    margin-right: 10px;
+  }
